@@ -1,22 +1,15 @@
-// If, else if, else:
-// 1.
+// 4. Simple Login System ( if the credentials match)
+// - username: admin, pass: adminpass - Welcome, admin!-
+// username: user123 , pass: password123 - Welcome, user123!
+// - missmatch -  Invalid username or password.
 
-// Checking Age for Different Ticket Prices
-// - Child ticket: $5 (below 12 years)
-// - "Teen ticket: $7" (below 18 years)
-// - "Senior ticket
+let userName = "user123";
+let password = "password123";
 
-// $10 (between 18 and 60)
-// - "Adult ticket: $10" (over 60years)
-
-let checkAge = 25;
-
-if (checkAge < 12) {
-  console.log("Child ticket: $5");
-} else if (checkAge <= 18) {
-  console.log("Teen ticket: $7");
-} else if (checkAge > 18 && checkAge <= 60) {
-  console.log("Adult ticket: $10");
+if (userName === "admin" && password === "adminpass") {
+  console.log("Welcome, admin!");
+} else if (userName === "user123" && password === "password123") {
+  console.log("Welcome, user123!");
 } else {
-  console.log("Senior ticket");
+  console.log("Invalid username or password.");
 }

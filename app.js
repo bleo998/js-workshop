@@ -1,22 +1,17 @@
-// If, else if, else:
-// 1.
+// 3. Determining Weather Advice
+// - sunny - Wear sunglasses!
+// - rainy - Take an umbrella!
+// - snowy - Wear a warm coat!
+// - any other - Check the weather forecast for more details.
 
-// Checking Age for Different Ticket Prices
-// - Child ticket: $5 (below 12 years)
-// - "Teen ticket: $7" (below 18 years)
-// - "Senior ticket
+let weather = "sunny";
 
-// $10 (between 18 and 60)
-// - "Adult ticket: $10" (over 60years)
-
-let checkAge = 25;
-
-if (checkAge < 12) {
-  console.log("Child ticket: $5");
-} else if (checkAge <= 18) {
-  console.log("Teen ticket: $7");
-} else if (checkAge > 18 && checkAge <= 60) {
-  console.log("Adult ticket: $10");
+if (weather == "sunny") {
+  console.log("Wear sunglasses!!");
+} else if (weather === "rainy") {
+  console.log("Take an umbrella!");
+} else if (weather === "snowy") {
+  console.log("Wear a warm coat!");
 } else {
-  console.log("Senior ticket");
+  console.log("Check the weather forecast for more details.");
 }

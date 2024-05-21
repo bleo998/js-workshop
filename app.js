@@ -1,22 +1,31 @@
-// If, else if, else:
-// 1.
+// If else: Needs to be solved with if, else and with ternary operator
 
-// Checking Age for Different Ticket Prices
-// - Child ticket: $5 (below 12 years)
-// - "Teen ticket: $7" (below 18 years)
-// - "Senior ticket
+// 1. Check Age for Voting Eligibility
+// 2. Determining Pass or Fail Based on Score 0-100 ( below 65 is a fail )
+// 3. Check temperature for comfort level ( comfort is between 20 and 25 )
+// 4. Determining Shipping Cost Based on Order Amount (if the amout is above 100 shipping is free, if not it's $10)
 
-// $10 (between 18 and 60)
-// - "Adult ticket: $10" (over 60years)
+// 1-
+let ageForVoting = 18;
 
-let checkAge = 25;
-
-if (checkAge < 12) {
-  console.log("Child ticket: $5");
-} else if (checkAge <= 18) {
-  console.log("Teen ticket: $7");
-} else if (checkAge > 18 && checkAge <= 60) {
-  console.log("Adult ticket: $10");
+if (ageForVoting >= 18) {
+  console.log("You can vote!");
 } else {
-  console.log("Senior ticket");
+  console.log("You can not vote!");
 }
+
+ageForVoting >= 18
+  ? console.log("You can vote now! - Ternary")
+  : console.log("You can not vote!!! - Ternary");
+// 2 -
+let score = 65;
+
+if (score >= 65) {
+  console.log("You passed!");
+} else {
+  console.log("You haven't passed");
+}
+
+score >= 65
+  ? console.log("You passed!! - Ternary")
+  : console.log("You've failed!");

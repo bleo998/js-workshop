@@ -29,3 +29,15 @@ if (score >= 65) {
 score >= 65
   ? console.log("You passed!! - Ternary")
   : console.log("You've failed!");
+// 3-
+
+let temperature = 25;
+if (temperature >= 20 && temperature <= 25) {
+  console.log("Checking temperature.... Comfort Level");
+} else {
+  console.log("The temperature is out of comfort level");
+}
+
+temperature >= 20 && temperature <= 25
+  ? console.log("Comfort Level - Ternary")
+  : console.log("The temperature is out of comfort level - Ternary");

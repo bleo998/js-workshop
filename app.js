@@ -23,9 +23,35 @@ let score = 65;
 if (score >= 65) {
   console.log("You passed!");
 } else {
-  console.log("You haven't passed");
+  console.log("You failed!");
 }
 
 score >= 65
   ? console.log("You passed!! - Ternary")
-  : console.log("You've failed!");
+  : console.log("You've failed! - Ternary");
+// 3-
+
+let temperature = 25;
+if (temperature >= 20 && temperature <= 25) {
+  console.log("Checking temperature.... Comfort Level");
+} else {
+  console.log("The temperature is out of comfort level");
+}
+
+temperature >= 20 && temperature <= 25
+  ? console.log("Comfort Level - Ternary")
+  : console.log("The temperature is out of comfort level - Ternary");
+
+// 4 -
+
+let amount = 100;
+
+if (amount >= 100) {
+  console.log("Free shipping!");
+} else {
+  console.log("Shipping cost's $10");
+}
+
+amount >= 100
+  ? console.log("Free shipping! - Ternary")
+  : console.log("Shipping cost's $10 - Ternary");
